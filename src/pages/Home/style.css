@@ -1,0 +1,91 @@
+.dark-mode {
+    background-color: #212529;
+}
+
+.custom-card {
+    background-color: #e0c3fc;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+}
+
+.author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.author-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-label {
+    font-size: 12px;
+    color: #888;
+}
+
+.author-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.read-more {
+    font-size: 14px;
+    color: #f15a29;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevent clicks when overlay is hidden */
+}
+
+.overlay.show,
+.custom-card:hover .overlay {
+    opacity: 1;
+    pointer-events: auto; /* Allow clicks when overlay is visible */
+}

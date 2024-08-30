@@ -1,0 +1,21 @@
+.player-div{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+/* margin: ; */
+border-radius: 20px;
+background-color: #f2f2f2;
+position: fixed;
+top: 42rem;
+opacity: 0.9;
+}
+.audio-player.dark{
+  background-color: #121212;
+  /* color: red; */
+}
+.player-div.dark{
+  background-color: black;
+  color: #f2f2f2;
+}
