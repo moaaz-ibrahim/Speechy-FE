@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <Router>
+      <title>Speechy</title>
         <div className='App'>
       <Routes>
         <Route path="/" element={<HomePage />} />

@@ -1,3 +1,3 @@
 const developmentUrl  ='http://localhost:3000';
-const productionUrl = 'https://your-production-url.com';
-export const baseUrl = developmentUrl;
+const productionUrl = 'https://mbuild.tech';
+export const baseUrl = productionUrl;
